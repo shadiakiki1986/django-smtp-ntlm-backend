@@ -27,7 +27,7 @@ CLASSIFIERS = [
 
 setup(
     name='django-smtp-ntlm-backend',
-    version='0.0.2.1',  # When changing this, remember to change it in __init__.py
+    version='0.0.3',  # When changing this, remember to change it in __init__.py
     description=DESCRIPTION,
     long_description=LONG_DESCRIPTION,
     packages=['django_smtp_ntlm_backend'],
