@@ -1,1 +1,4 @@
-git+https://github.com/shadiakiki1986/python-ntlm3.git@feature_smtp
+# until https://github.com/trustrachel/python-ntlm3/pull/24 is closed, using my own fork
+# was using this git link, but then just published my own pypi package
+# git+https://github.com/shadiakiki1986/python-ntlm3.git@feature_smtp
+shadiakiki1986-python-ntlm3 >= 1.0.5-dev

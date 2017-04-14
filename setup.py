@@ -45,6 +45,6 @@ setup(
         # until https://github.com/trustrachel/python-ntlm3/pull/24
         # is closed, using my own published pypi package
         # from my own github fork
-        'shadiakiki1986-python-ntlm3 >= 1.0.4-dev'
+        'shadiakiki1986-python-ntlm3 >= 1.0.5-dev'
     ],
 )
