@@ -8,14 +8,9 @@ COMMIT_STATUS := $(shell git commit --porcelain)
 
 release:
 ifeq (,${COMMIT_STATUS})
-	RES=python setup.py sdist bdist_wheel upload -r pypitest
-	ifeq (0,${RES})
-		@echo "publishing to pypi was ok"
-		git tag $(VERSION)
-		git push
-	else
-		@echo "Failed to publish to pypi"
-	endif
+	python setup.py sdist bdist_wheel upload -r pypitest || ( echo "Failed to publish to pypi"; exit 1 )
+	git tag $(VERSION)
+	git push
 else	
 	@echo "You have uncommited chnages"
 endif
