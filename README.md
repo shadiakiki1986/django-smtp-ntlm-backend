@@ -8,6 +8,11 @@ Mostly copied from
 
 License same as [python-ntlm3](https://github.com/trustrachel/python-ntlm3/blob/master/LICENSE.md)
 
+# Installing
+`pip install django-smtp-ntlm-backend`
+
+and add the settings variables for SMTP as usual, with the username being `domain\\user`
+
 # Testing
 ```bash
 pew new DJANGO_SMTP_NTLM
