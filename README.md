@@ -15,3 +15,12 @@ pip3 install -q Django==1.11
 pip3 install -r requirements.txt
 python3 runtests.py
 ```
+
+# Publishing to pypi
+Run
+```bash
+pew in DJANGO_SMTP_NTLM make release
+```
+
+If your username/password for pypi are not in a `.pypirc` file ([ref](http://peterdowns.com/posts/first-time-with-pypi.html)),
+you will be prompted to type in your credentials.
