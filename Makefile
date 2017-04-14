@@ -8,7 +8,8 @@ COMMIT_STATUS := $(shell git commit --porcelain)
 
 release:
 ifeq (,${COMMIT_STATUS})
-	python setup.py sdist bdist_wheel upload -r pypitest || ( echo "Failed to publish to pypi"; exit 1 )
+	# use "-r pypitest" after "upload" below to submit to test pypi server
+	python setup.py sdist bdist_wheel upload || ( echo "Failed to publish to pypi"; exit 1 )
 	git tag $(VERSION)
 	git push
 else	
