@@ -37,11 +37,14 @@ setup(
     maintainer_email='shadiakiki1986@gmail.com',
     url='https://github.com/piotrbulinski/django-smtp-ntlm-backend/',
     download_url='https://github.com/shadiakiki1986/django-smtp-ntlm-backend/archive/master.zip',
-    license='LGPLv3',
+    license='GNU Lesser GPL',
     platforms=['Posix', 'MacOS X', 'Windows'],
     classifiers=CLASSIFIERS,
     install_requires=[
         'Django >= 1.5',
-        'git+https://github.com/shadiakiki1986/python-ntlm3.git@feature_smtp'
+        # until https://github.com/trustrachel/python-ntlm3/pull/24
+        # is closed, using my own published pypi package
+        # from my own github fork
+        'shadiakiki1986-python-ntlm3 >= 1.0.4-dev'
     ],
 )
