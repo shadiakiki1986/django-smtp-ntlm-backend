@@ -1,1 +1,5 @@
 __pycache__
+.*.swp
+build/
+dist/
+django_smtp_ntlm_backend.egg-info/
