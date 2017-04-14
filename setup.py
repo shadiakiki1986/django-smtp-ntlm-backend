@@ -6,7 +6,7 @@ DESCRIPTION = "A Django email backend for SMTP servers with NTLM authentication"
 
 LONG_DESCRIPTION = None
 try:
-    LONG_DESCRIPTION = open('README.rst').read()
+    LONG_DESCRIPTION = open('README.md').read()
 except:
     pass
 
@@ -37,7 +37,7 @@ setup(
     maintainer_email='shadiakiki1986@gmail.com',
     url='https://github.com/piotrbulinski/django-smtp-ntlm-backend/',
     download_url='https://github.com/shadiakiki1986/django-smtp-ntlm-backend/archive/master.zip',
-    license='MIT',
+    license='LGPLv3',
     platforms=['Posix', 'MacOS X', 'Windows'],
     classifiers=CLASSIFIERS,
     install_requires=[

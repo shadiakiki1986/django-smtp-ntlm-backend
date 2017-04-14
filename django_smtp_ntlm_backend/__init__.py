@@ -1,6 +1,6 @@
 from django.core.mail.backends.smtp import EmailBackend
 from ntlm3.smtp import ntlm_authenticate
-import smtplib
+from smtplib import SMTP
 from django.core.mail.utils import DNS_NAME
 
 # When changing this, remember to change it in setup.py
@@ -22,7 +22,7 @@ class NTLMEmail(EmailBackend):
     try:
       # If local_hostname is not specified, socket.getfqdn() gets used.
       # For performance, we use the cached FQDN for local_hostname.
-      self.connection = smtplib.SMTP(
+      self.connection = SMTP(
         self.host, self.port,
         local_hostname=DNS_NAME.get_fqdn()
       )
