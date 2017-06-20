@@ -29,7 +29,7 @@ class FakeSmtpConnection(object):
 def fake_ntlm_authenticate(*args, **kwargs):
     pass
 
-class SESBackendTest(TestCase):
+class NtlmBackendTest(TestCase):
     def setUp(self):
         django_settings.EMAIL_BACKEND = 'django_smtp_ntlm_backend.NTLMEmail'
         django_smtp_ntlm_backend.SMTP = FakeSmtpConnection
