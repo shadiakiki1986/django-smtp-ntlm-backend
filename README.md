@@ -43,7 +43,10 @@ In the `settings.py`, use
 # Publishing to pypi
 Run
 ```bash
-pew in DJANGO_SMTP_NTLM make release
+pew workon DJANGO_SMTP_NTLM
+make release # this will generate the dist files but fail to upload for some reason ATM
+pip install twine
+twine upload dist/*
 ```
 
 If your username/password for pypi are not in a `.pypirc` file ([ref](http://peterdowns.com/posts/first-time-with-pypi.html)),
