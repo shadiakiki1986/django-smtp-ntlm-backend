@@ -27,7 +27,7 @@ CLASSIFIERS = [
 
 setup(
     name='django-smtp-ntlm-backend',
-    version='0.0.3',  # When changing this, remember to change it in __init__.py
+    version='0.0.4',  # When changing this, remember to change it in __init__.py
     description=DESCRIPTION,
     long_description=LONG_DESCRIPTION,
     packages=['django_smtp_ntlm_backend'],
@@ -35,7 +35,7 @@ setup(
     author_email='shadiakiki1986@gmail.com',
     maintainer='Shadi Akiki',
     maintainer_email='shadiakiki1986@gmail.com',
-    url='https://github.com/piotrbulinski/django-smtp-ntlm-backend/',
+    url='https://github.com/shadiakiki1986/django-smtp-ntlm-backend/',
     download_url='https://github.com/shadiakiki1986/django-smtp-ntlm-backend/archive/master.zip',
     license='GNU Lesser GPL',
     platforms=['Posix', 'MacOS X', 'Windows'],

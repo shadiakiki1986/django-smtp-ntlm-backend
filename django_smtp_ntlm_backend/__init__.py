@@ -4,7 +4,7 @@ from smtplib import SMTP
 from django.core.mail.utils import DNS_NAME
 
 # When changing this, remember to change it in setup.py
-VERSION = (0, 0, 3)
+VERSION = (0, 0, 4)
 __version__ = '.'.join([str(x) for x in VERSION])
 __author__ = 'Shadi Akiki'
 __all__ = ('SmtpNtlmBackend',)
