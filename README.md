@@ -51,3 +51,5 @@ twine upload dist/*
 
 If your username/password for pypi are not in a `.pypirc` file ([ref](http://peterdowns.com/posts/first-time-with-pypi.html)),
 you will be prompted to type in your credentials.
+
+Published at pypi here: https://pypi.python.org/pypi/django-smtp-ntlm-backend/
